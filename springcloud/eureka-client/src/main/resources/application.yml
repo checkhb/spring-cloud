@@ -1,6 +1,5 @@
 server:
   port: 9001
-
 spring:
   application:
     name: eureka-client-9000
@@ -9,6 +8,6 @@ eureka:
     hostname: localhost
   client:
     service-url:
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+      defaultZone: http://${eureka.instance.hostname}:9000/eureka/
 
 
