@@ -1,0 +1,16 @@
+server:
+  port: 9002
+spring:
+  application:
+    #注册到eureka服务端的名称
+    name: ms-consumer-user
+eureka:
+  instance:
+    hostname: localhost
+    #点击具体的微服务，右下角是否显示ip
+    ip-address: true
+    #显示微服务的名称
+    instance-id: ms-consumer-user-9002
+  client:
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:9000/eureka/
